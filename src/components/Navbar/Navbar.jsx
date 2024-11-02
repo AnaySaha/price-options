@@ -24,7 +24,9 @@ const Navbar = () => {
             }
           <CiMenuFries></CiMenuFries>
           </div>
-          <ul className="md:flex">
+          <ul className={`md:flex absolute duration-1000
+          ${open ? '' : 'hidden'}
+          bg-yellow-200 px-06 shadow-lg`}>
                 {
                     routes.map (route => <Link key={route.id}
                 route={route}></Link>)
