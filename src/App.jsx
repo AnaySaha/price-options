@@ -3,6 +3,7 @@ import './App.css'
 import Navbar from './components/Navbar/Navbar'
 import DaisyNav from './components/DaisyNav'
 import Feature from './components/Feature/Feature'
+import { LineChart } from 'recharts'
 
 function App() {
   // eslint-disable-next-line no-empty-pattern, no-undef
@@ -17,6 +18,7 @@ function App() {
       
      <PriceOptions></PriceOptions>
      <Feature></Feature>
+     <LineChart dataKey={"math"}></LineChart>
     </>
   )
 }
